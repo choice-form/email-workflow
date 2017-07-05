@@ -26,6 +26,7 @@
     "grunt-mailgun": "^2.0.1",
     "grunt-open": "^0.2.3",
     "grunt-parallel": "^0.5.1",
+    "grunt-qiniu-deploy": "^0.1.4",
     "grunt-replace": "^0.9.3",
     "grunt-sass": "^1.0.0",
     "imagemin-mozjpeg": "^5.1.0",

@@ -6,11 +6,11 @@ module.exports = {
       patterns: [
         {
           match: /(<img[^>]+[\"'])(\.\.\/src\/img\/)/gi,  // Matches <img * src="../src/img or <img * src='../src/img'
-          replacement: '$1../<%= paths.dist_img %>/'
+          replacement: '$1<%= paths.qiniu_host %>/'
         },
         {
           match: /(url\(*[^)])(\.\.\/src\/img\/)/gi,  // Matches url('../src/img') or url(../src/img) and even url("../src/img")
-          replacement: '$1../<%= paths.dist_img %>/'
+          replacement: '$1<%= paths.qiniu_host %>/'
         }
       ]
     },

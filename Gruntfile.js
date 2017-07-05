@@ -11,6 +11,7 @@ module.exports = function(grunt) {
         src_img:    'src/img',
         dist:       'dist',
         dist_img:   'dist/img',
+        qiniu_host: 'https://media.cform.io/mail',
         preview:    'preview'
       },
 
@@ -20,4 +21,6 @@ module.exports = function(grunt) {
 
     }
   });
+
+  grunt.loadNpmTasks('grunt-qiniu-deploy');
 };

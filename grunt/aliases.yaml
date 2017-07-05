@@ -6,6 +6,7 @@ default:
   - 'assemble'
   - 'juice'
   - 'imagemin'
+  - 'qiniu'
   - 'replace:src_images'
 
 # Use grunt send if you want to actually send the email to your inbox
