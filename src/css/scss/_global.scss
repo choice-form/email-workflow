@@ -33,7 +33,6 @@ table {
   mso-table-lspace: 0pt;
   mso-table-rspace: 0pt;
   width: 100%;
-
   td {
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 14px;
@@ -53,4 +52,11 @@ table {
 .ExternalClass td,
 .ExternalClass div {
   line-height: 100%;
+}
+
+span {
+  color: $body-font-color;
+  font-size: 12px;
+  line-height: 14px;
+  display: inline-block;
 }

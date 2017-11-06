@@ -4,54 +4,39 @@ subject: Components Guide
 ---
 
 <span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
-<table class="main">
+<table class="main" border="0">
+    <tr>
+        <div class="cover-header"></div>
+    </tr>
     <tr>
         <td class="wrapper">
             <table>
                 <tr>
                     <td>
-                        <h1 class="align-center">Simple responsive HTML email template</h1>
-                        <p>Hi there,</p>
-                        <p>Sometimes you just want to send a simple HTML email with a basic design.</p>
-                        <p>This is a really simple email template. It's sole purpose is to get you to click the button below.</p>
-                        <p>All the information you need is on GitHub.</p>
+                        <h2 class="align-left">Please Confirm Your Email Address</h2>
+                        <p>Your account info:</p>
+                        <p>Username (e-mail): wester1220@gmail.com</p>
 
-                        For buttons you can make use of the handlebars button partial
-                        Saves you having to write out the bulletproof button HTML
-                        See ./src/partials/components for custom components
-                        OR you can type out the HTML if you prefer
+                        {{> button type='primary' align='center' url='https://www.cform.io' title='Verify your email'}}
 
-                        <table class="btn btn-primary">
-                            <tr>
-                                <td align="center">
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="http://www.leemunroe.com">Call to action</a>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-
-                        {{> button type='primary' align='center' url='https://github.com/leemunroe/grunt-email-workflow' title='View the source on GitHub' }}
-
-                        <p>Feel free to use, copy, modify this email template as you wish.</p>
-                        <p>Thanks, have a lovely day.</p>
-                        <p>{{> follow_lee }}</p>
+                        <p>Not working? Try using this link:</p>
+                        <a class="link small">https://www.cform.io/account/verifyEmail?token=CYdfFrPiM-lOmR8r2zx7UsSHRAwADljJrPb1YgItI-IFKuUiOhaS-JTIq0OyMCvGUkpmHkbnJ_9PpDIdzhSe4ScaQWpzRKLPtOW6jU2WwY4KBffn&utm_source=server_emails&utm_medium=email&utm_campaign=server_201407&utm_content=verify</a>
+                        <span>You are receiving this email because you signed up to choiceform. If you did not make this request please contact choiceform Support.</span>
+                        {{!-- <p>{{> follow_lee }}</p> --}}
                     </td>
                 </tr>
             </table>
         </td>
     </tr>
+
+    {{> follow_lee }}
+
+    <tr class="footer">
+        <td class="wrapper">
+            <div class="cf-logo"></div>
+            <p class="align-center">This email was sent to wester1220@gmail.com. If you wish to unsubscribe or update your email
+                preferences, please visit our
+                Email Preference Center.</p>
+        </td>
+    </tr>
 </table>
-<div class="footer">
-    <table>
-        <tr>
-            <td class="align-center">
-                <p>Don't like these annoying emails? <a href="{{ default.unsubscribe_url }}"><unsubscribe>Unsubscribe</unsubscribe></a>.</p>
-            </td>
-        </tr>
-    </table>
-</div>
