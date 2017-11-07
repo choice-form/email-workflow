@@ -38,8 +38,8 @@ ol {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 14px;
   font-weight: normal;
-  margin: 0;
-  margin-bottom: 15px;
+  margin: 0 0 15px 0!important;
+  padding: 0 !important;
   li {
     list-style-position: inside;
     margin-left: 5px;
