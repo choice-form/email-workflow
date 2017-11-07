@@ -1,0 +1,45 @@
+---
+layout: default.hbs
+subject: Components Guide
+---
+
+<span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
+<table class="main" border="0">
+  <tr>
+    <div class="cover-header primary pattern logo"></div>
+  </tr>
+  <tr>
+    <td class="wrapper">
+      <table>
+        <tr>
+          <td>
+            <h1 class="align-center">Hi Wester</h1>
+
+            {{> divider }}
+            <h2 class="align-left">Welcome to choiceform</h2>
+            <p>I'm excited to have you on board! With your valuable contribution, we can reach the next level!</p>
+            <p>choiceform this is a beta, not everything will be perfect yet. A lot of awesome features will be added during or after the beta period.</p>
+            {{> divider }}
+            <p>We need to make sure this is your email address. Please, click the button below to verify it so that we can activate your full access free account.</p>
+            {{> button type='secondary' align='center' url='https://www.cform.io' title='Verify my email'}}
+            {{> divider }}
+            <!--<h2 class="align-left">How to get started</h2>-->
+            <span>If you have any questions, comments or feedback, we’d love to hear them. So please, contact us at <a href="">support@cform.io</a>.</span>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  {{> follow_lee }}
+
+  <tr class="footer">
+    <td class="wrapper">
+      <div class="cf-logo"></div>
+      <p class="align-center">This email was sent to wester1220@gmail.com. If you wish to unsubscribe or update your
+        email
+        preferences, please visit our
+        Email Preference Center.</p>
+    </td>
+  </tr>
+</table>

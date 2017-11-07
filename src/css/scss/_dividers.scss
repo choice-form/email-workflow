@@ -10,11 +10,23 @@
   }
 
   td {
-    border-top: 1px solid $divider-color;
+    border-top: 1px solid $grey;
     line-height: 0;
     font-size: 0;
     height: 1px;
     margin: 0;
     padding: 0;
   }
+}
+
+.octicon-plus {
+  margin: 0 15px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+  background-size: 60px 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAElBMVEUAAADOzs7Pz8/Pz8/Nzc3Nzc06LsbTAAAABXRSTlMAP0B/gF+mhZ8AAABKSURBVHja7dTBDQAQEADB4+i/ZclV4CXCTAP72wAAAADgQn2UHqflLCksLCwsLCz8fnhuExYWNhBhYWFhYWHhbS1LCwAAAAD42ALzygq3SNoeQQAAAABJRU5ErkJggg==);
 }
