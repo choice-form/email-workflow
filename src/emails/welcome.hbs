@@ -13,7 +13,7 @@ subject: Components Guide
       <table>
         <tr>
           <td>
-            <h1 class="align-center">Hi Wester</h1>
+            <h1 class="align-center">Hi %name%</h1>
 
             {{> divider }}
             <h2 class="align-left">Welcome to choiceform</h2>
@@ -21,8 +21,10 @@ subject: Components Guide
             <p>choiceform this is a beta, not everything will be perfect yet. A lot of awesome features will be added during or after the beta period.</p>
             {{> divider }}
             <p>We need to make sure this is your email address. Please, click the button below to verify it so that we can activate your full access free account.</p>
-            {{> button type='secondary' align='center' url='https://www.cform.io' title='Verify my email'}}
+            {{> button type='secondary' align='center' url='%verify_url%' title='Verify my email'}}
             {{> divider }}
+            <p>Button not working? Paste the following link into your browser:</p>
+            <a class="link small">%verify_url%</a>
             <!--<h2 class="align-left">How to get started</h2>-->
             <span>If you have any questions, comments or feedback, we’d love to hear them. So please, contact us at <a href="">support@cform.io</a>.</span>
           </td>
@@ -36,10 +38,6 @@ subject: Components Guide
   <tr class="footer">
     <td class="wrapper">
       <div class="cf-logo"></div>
-      <p class="align-center">This email was sent to wester1220@gmail.com. If you wish to unsubscribe or update your
-        email
-        preferences, please visit our
-        Email Preference Center.</p>
     </td>
   </tr>
 </table>

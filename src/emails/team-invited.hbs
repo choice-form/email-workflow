@@ -13,21 +13,21 @@ subject: Components Guide
       <table>
         <tr>
           <td>
-            <h2 class="align-left">Wester has invited you to join the <strong>test</strong> team</h2>
+            <h2 class="align-left">%inviter_name% has invited you to join the <strong>%team_name%</strong> team</h2>
             <div class="invited-profile">
-              <div class="profile"><img src="https://cdn.dribbble.com/users/1856430/avatars/normal/5ef883d205cd11fc48aff0682ca35628.jpg?1509313388" alt=""></div>
+              <div class="profile"><img src="%team_avatar%" alt=""></div>
               <div class="octicon-plus"></div>
-              <div class="profile"><img src="https://cdn.dribbble.com/users/133953/avatars/normal/4ed7e3f500a643bc2a93d77db934483e.jpg?1499767665" alt=""></div>
+              <div class="profile"><img src="%invitee_avatar%" alt=""></div>
             </div>
             {{> divider }}
-            <p>Hi elsonwangsh!</p>
-            <p>Wester has invited you to join the test team on choiceform. Head over to <a href="" class="link">https://cform.io/test</a> to check out choiceform's profile.</p>
-            {{> button type='primary' align='center' url='https://www.cform.io' title='Join test'}}
-            <span>Note: If you get a 404 page, make sure you’re signed in as elsonwangsh. You can also accept the invitation by visiting the organization page directly at <a href="" class="link">https://cform.io/test</a>.</span>
+            <p>Hi %invitee_name%!</p>
+            <p>%inviter_name% has invited you to join the test team on choiceform.</p>
+            {{> button type='primary' align='center' url='%accept_invitation_url%' title='Join %team_name%'}}
+            <span>Note: If you get a 404 page, make sure you’re signed in as %invitee_name%. You can also accept the invitation by visiting the organization page directly at <a href="" class="link">https://cform.io/test</a>.</span>
             {{> divider }}
             <span>Button not working? Paste the following link into your browser:</span>
-            <a class="link small">https://www.cform.io/account/verifyEmail?token=CYdfFrPiM-lOmR8r2zx7UsSHRAwADljJrPb1YgItI-IFKuUiOhaS-JTIq0OyMCvGUkpmHkbnJ_9PpDIdzhSe4ScaQWpzRKLPtOW6jU2WwY4KBffn&utm_source=server_emails&utm_medium=email&utm_campaign=server_201407&utm_content=verify</a>
-            <span>You’re receiving this email because Wester invited you to an organization on GitHub.</span>
+            <a class="link small">%accept_invitation_url%</a>
+            <span>You’re receiving this email because %inviter_name% invited you to a team on Choice Form.</span>
           </td>
         </tr>
       </table>
@@ -39,10 +39,6 @@ subject: Components Guide
   <tr class="footer">
     <td class="wrapper">
       <div class="cf-logo"></div>
-      <p class="align-center">This email was sent to wester1220@gmail.com. If you wish to unsubscribe or update your
-        email
-        preferences, please visit our
-        Email Preference Center.</p>
     </td>
   </tr>
 </table>
