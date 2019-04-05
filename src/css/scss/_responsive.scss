@@ -20,7 +20,7 @@ table[class=body] {
     // Spacing
     .content,
     .wrapper {
-      padding: 10px !important;
+      padding: 20px !important;
     }
     .container {
       padding: 0 !important;
@@ -50,6 +50,11 @@ table[class=body] {
     }
     .cf-logo {
       height: 44px !important;
+    }
+    .brand-small {
+      width: 24px !important;
+      height: 33px !important;
+      background-size: 24px 33px !important;
     }
     .cover-header.image {
       background-size: 100% !important;

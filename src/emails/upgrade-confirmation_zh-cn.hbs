@@ -1,0 +1,60 @@
+---
+layout: default.hbs
+subject: Components Guide
+---
+
+<span class="preheader">升级确认</span>
+<table class="main" border="0">
+  <tr>
+    <td class="wrapper">
+      <table>
+        <tr>
+          <td>
+            <div class="brand-small grey"></div>
+            {{> divider }}
+            <h2 class="align-left">感谢您升级！</h2>
+            <p>您已经升级到 <strong>%plan%</strong> 计划。 您可以随时 <a href="" class="link"><strong>查看或打印收据</strong></a>。</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="table">
+            <table>
+              <thead>
+              <tr>
+                <th class="align-left radius-top-left radius-top-right" colspan="2">订单详情</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td class="align-left table-divider">账号：</td>
+                <th class="align-left table-divider">%name%</th>
+              </tr>
+              <tr>
+                <td class="align-left table-divider">计划：</td>
+                <th class="align-left table-divider">%plan%</th>
+              </tr>
+              <tr>
+                <td class="align-left radius-bottom-left">更新日期:</td>
+                <th class="align-left radius-bottom-right">%date%</th>
+              </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            {{> button type='secondary' align='center' url='%url%' title='查看收据'}}
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr class="footer">
+    <td class="wrapper">
+      <div class="cf-logo"></div>
+    </td>
+  </tr>
+</table>
+
+{{> copyright }}

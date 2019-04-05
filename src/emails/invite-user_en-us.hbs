@@ -3,16 +3,15 @@ layout: default.hbs
 subject: Components Guide
 ---
 
-<span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
+<span class="preheader">%inviter_name% has invited you to join the %team_name% team.</span>
 <table class="main" border="0">
-  <tr>
-    <div class="cover-header brand dark"></div>
-  </tr>
   <tr>
     <td class="wrapper">
       <table>
         <tr>
           <td>
+            <div class="brand-small grey"></div>
+            {{> divider }}
             <h2 class="align-left">%inviter_name% has invited you to join the <strong>%team_name%</strong> team</h2>
             <div class="invited-profile">
               <div class="profile"><img src="%team_avatar%" alt=""></div>
@@ -20,21 +19,18 @@ subject: Components Guide
               <div class="profile"><img src="%invitee_avatar%" alt=""></div>
             </div>
             {{> divider }}
-            <p>Hi %invitee_name%!</p>
+            <p>Hi %invitee_name%,</p>
             <p>%inviter_name% has invited you to join the test team on choiceform.</p>
             {{> button type='primary' align='center' url='%accept_invitation_url%' title='Join %team_name%'}}
-            <span>Note: If you get a 404 page, make sure you’re signed in as %invitee_name%. You can also accept the invitation by visiting the organization page directly at <a href="" class="link">https://cform.io/test</a>.</span>
             {{> divider }}
             <span>Button not working? Paste the following link into your browser:</span>
             <a class="link small">%accept_invitation_url%</a>
-            <span>You’re receiving this email because %inviter_name% invited you to a team on Choice Form.</span>
+            <span>You’re receiving this email because %inviter_name% invited you to a team on choiceform.</span>
           </td>
         </tr>
       </table>
     </td>
   </tr>
-
-  {{> follow_lee }}
 
   <tr class="footer">
     <td class="wrapper">
@@ -42,3 +38,5 @@ subject: Components Guide
     </td>
   </tr>
 </table>
+
+{{> copyright }}

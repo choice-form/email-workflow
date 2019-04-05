@@ -3,16 +3,15 @@ layout: default.hbs
 subject: Components Guide
 ---
 
-<span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
+<span class="preheader">You have been removed from the %team_name% team.</span>
 <table class="main" border="0">
-  <tr>
-    <div class="cover-header brand dark"></div>
-  </tr>
   <tr>
     <td class="wrapper">
       <table>
         <tr>
           <td>
+            <div class="brand-small grey"></div>
+            {{> divider }}
             <h2 class="align-left">You have been removed from the <strong>%team_name%</strong> team</h2>
             <p>Hi %user_name%!</p>
             <p>You've been removed from the %team_name% team.</p>
@@ -22,11 +21,11 @@ subject: Components Guide
     </td>
   </tr>
 
-  {{> follow_lee }}
-
   <tr class="footer">
     <td class="wrapper">
       <div class="cf-logo"></div>
     </td>
   </tr>
 </table>
+
+{{> copyright }}

@@ -1,0 +1,42 @@
+---
+layout: default.hbs
+subject: Components Guide
+---
+
+<span class="preheader">%inviter_name% 邀请您加入 %team_name% 团队。</span>
+<table class="main" border="0">
+  <tr>
+    <td class="wrapper">
+      <table>
+        <tr>
+          <td>
+            <div class="brand-small grey"></div>
+            {{> divider }}
+            <h2 class="align-left">%inviter_name% 邀请您加入 <strong>%team_name%</strong> 团队</h2>
+            <div class="invited-profile">
+              <div class="profile"><img src="%team_avatar%" alt=""></div>
+              <div class="octicon-plus"></div>
+              <div class="profile"><img src="%invitee_avatar%" alt=""></div>
+            </div>
+            {{> divider }}
+            <p>%invitee_name%，您好：</p>
+            <p>%inviter_name% 邀请您加入 choiceform 的 %team_name% 团队。</p>
+            {{> button type='primary' align='center' url='%accept_invitation_url%' title='加入 %team_name%'}}
+            {{> divider }}
+            <span>如果您无法按下“加入”按钮，可将以下网址复制到（或键入）您的浏览器，以此确认您的电邮地址：</span>
+            <a class="link small">%accept_invitation_url%</a>
+            <span>您收到这封电子邮件是因为 %inviter_name% 邀请您参加 choiceform 上的一个团队。</span>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr class="footer">
+    <td class="wrapper">
+      <div class="cf-logo"></div>
+    </td>
+  </tr>
+</table>
+
+{{> copyright }}

@@ -1,0 +1,60 @@
+---
+layout: default.hbs
+subject: Components Guide
+---
+
+<span class="preheader">Your upgrade confirmation</span>
+<table class="main" border="0">
+  <tr>
+    <td class="wrapper">
+      <table>
+        <tr>
+          <td>
+            <div class="brand-small grey"></div>
+            {{> divider }}
+            <h2 class="align-left">Thanks for Upgrading! </h2>
+            <p>You've upgraded to a <strong>%plan%</strong> plan. You can <a href="" class="link"><strong>view or print your receipt</strong></a> at any time.</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="table">
+            <table>
+              <thead>
+              <tr>
+                <th class="align-left radius-top-left radius-top-right" colspan="2">Order Details</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td class="align-left table-divider">Username:</td>
+                <th class="align-left table-divider">%name%</th>
+              </tr>
+              <tr>
+                <td class="align-left table-divider">Plan:</td>
+                <th class="align-left table-divider">%plan%</th>
+              </tr>
+              <tr>
+                <td class="align-left radius-bottom-left">Renewal Date:</td>
+                <th class="align-left radius-bottom-right">%date%</th>
+              </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            {{> button type='secondary' align='center' url='%url%' title='View Receipt'}}
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr class="footer">
+    <td class="wrapper">
+      <div class="cf-logo"></div>
+    </td>
+  </tr>
+</table>
+
+{{> copyright }}
