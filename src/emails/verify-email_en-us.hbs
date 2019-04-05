@@ -3,35 +3,35 @@ layout: default.hbs
 subject: Components Guide
 ---
 
-<span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
+<span class="preheader">Please verify your email address</span>
 <table class="main" border="0">
-  <tr>
-    <div class="cover-header brand dark"></div>
-  </tr>
   <tr>
     <td class="wrapper">
       <table>
         <tr>
           <td>
+            <a href="https://choiceform.com" target="_blank"><div class="brand-small grey"></div></a>
+            {{> divider }}
             <h2 class="align-left">Please Confirm Your Email Address</h2>
-            <p>Your account info:</p>
-            <p>Username: %name%</p>
+            <p>Hi %name%,</p>
             {{> button type='primary' align='center' url='%verify_url%' title='Verify your email'}}
             {{> divider }}
             <p>Button not working? Paste the following link into your browser:</p>
             <a class="link small">%verify_url%</a>
-            <span>You are receiving this email because you signed up to choiceform. If you did not make this request please contact choiceform Support.</span>
+            <span>You are receiving this email because you signed up to choiceform. If you did not make this request please contact <a href="" class="link">support@cform.io</a>.</span>
           </td>
         </tr>
       </table>
     </td>
   </tr>
 
-  {{> follow_lee }}
+  {{!--{{> follow_lee }}--}}
 
   <tr class="footer">
     <td class="wrapper">
-      <div class="cf-logo"></div>
+      <a href="https://choiceform.com" target="_blank"><div class="cf-logo"></div></a>
     </td>
   </tr>
 </table>
+
+{{> copyright }}

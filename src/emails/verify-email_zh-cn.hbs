@@ -3,7 +3,7 @@ layout: default.hbs
 subject: Components Guide
 ---
 
-<span class="preheader">需要变更您账号的密码？</span>
+<span class="preheader">验证您的电子邮件地址</span>
 <table class="main" border="0">
   <tr>
     <td class="wrapper">
@@ -12,18 +12,20 @@ subject: Components Guide
           <td>
             <a href="https://choiceform.com" target="_blank"><div class="brand-small grey"></div></a>
             {{> divider }}
-            <h2 class="align-left">需要变更您账号的密码？</h2>
-            <p>哦! 我们听说您丢失了密码。要变更密码，请单击下面的链接。</p>
-            {{> button type='primary' align='center' url='%reset_password_url%' title='变更密码'}}
-            <p>如果您无法按下“重置”按钮，可将以下网址复制到（或键入）您的浏览器，以此确认您的电邮地址：</p>
-            <a class="link small">%reset_password_url%</a>
+            <h2 class="align-left">请验证这个邮件地址</h2>
+            <p>%name%，您好：</p>
+            {{> button type='primary' align='center' url='%verify_url%' title='验证邮件地址'}}
             {{> divider }}
+            <p>如果您无法按下“验证”按钮，可将以下网址复制到（或键入）您的浏览器，以此确认您的电邮地址：</p>
+            <a class="link small">%verify_url%</a>
             <span>您收到这封邮件是因为您注册了 choiceform。如果您没有发出此请求，请联系 <a href="" class="link">support@cform.io</a>。</span>
           </td>
         </tr>
       </table>
     </td>
   </tr>
+
+  {{!--{{> follow_lee }}--}}
 
   <tr class="footer">
     <td class="wrapper">

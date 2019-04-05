@@ -1,0 +1,67 @@
+---
+layout: default.hbs
+subject: Components Guide
+---
+
+<span class="preheader">您的 choiceform 账单</span>
+<table class="main" border="0">
+  <tr>
+    <td class="wrapper">
+      <table>
+        <tr>
+          <td>
+            <a href="https://choiceform.com" target="_blank"><div class="brand-small grey"></div></a>
+            {{> divider }}
+            <h2 class="align-left">%name% 的付款收据</h2>
+            <table class="receipt">
+              <tr>
+                <td><span>付款日期</span></td>
+                <td><strong>%start-date%</strong></td>
+              </tr>
+              <tr>
+                <td><span>账户</span></td>
+                <td><strong>%email%</strong></td>
+              </tr>
+              <tr>
+                <td><span>金额</span></td>
+                <td><strong>%amount%</strong> %project%</td>
+              </tr>
+              <tr>
+                <td><span>合计</span></td>
+                <td><strong>%total%</strong>*</td>
+              </tr>
+              <tr>
+                <td><span>事务ID</span></td>
+                <td><strong>%transaction%</strong></td>
+              </tr>
+              <tr>
+                <td><span>服务结束日期</span></td>
+                <td><strong>%end-date%<</strong></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            {{> button type='secondary' align='center' url='%url%' title='下载PDF文件'}}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span>* 价格已包含6%增值税</span>
+            {{> divider }}
+            <p>如果您有问题，请联系 <a href="" class="link">support@cform.io</a>。</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr class="footer">
+    <td class="wrapper">
+      <a href="https://choiceform.com" target="_blank"><div class="cf-logo"></div></a>
+    </td>
+  </tr>
+</table>
+
+{{> copyright }}

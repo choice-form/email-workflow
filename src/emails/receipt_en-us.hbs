@@ -1,0 +1,67 @@
+---
+layout: default.hbs
+subject: Components Guide
+---
+
+<span class="preheader">Your choiceform Receipt</span>
+<table class="main" border="0">
+  <tr>
+    <td class="wrapper">
+      <table>
+        <tr>
+          <td>
+            <a href="https://choiceform.com" target="_blank"><div class="brand-small grey"></div></a>
+            {{> divider }}
+            <h2 class="align-left">Payment Receipt for %name%</h2>
+            <table class="receipt">
+              <tr>
+                <td><span>Date of payment</span></td>
+                <td><strong>%start-date%</strong></td>
+              </tr>
+              <tr>
+                <td><span>Account Billed</span></td>
+                <td><strong>%email%</strong></td>
+              </tr>
+              <tr>
+                <td><span>Amount</span></td>
+                <td><strong>%amount%</strong> %project%</td>
+              </tr>
+              <tr>
+                <td><span>Total</span></td>
+                <td><strong>%total%</strong>*</td>
+              </tr>
+              <tr>
+                <td><span>Transaction ID</span></td>
+                <td><strong>%transaction%</strong></td>
+              </tr>
+              <tr>
+                <td><span>End of service</span></td>
+                <td><strong>%end-date%<</strong></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            {{> button type='secondary' align='center' url='%url%' title='Download as PDF'}}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span>* VAT/GST paid directly by choiceform, where applicable.</span>
+            {{> divider }}
+            <p>Questions? Please contact <a href="">support@cform.io</a>.</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr class="footer">
+    <td class="wrapper">
+      <a href="https://choiceform.com" target="_blank"><div class="cf-logo"></div></a>
+    </td>
+  </tr>
+</table>
+
+{{> copyright }}
