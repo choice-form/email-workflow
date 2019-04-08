@@ -1,0 +1,73 @@
+---
+layout: default.hbs
+subject: Components Guide
+---
+
+<span class="preheader">%collect% 下线结算清单</span>
+<table class="main" border="0">
+  <tr>
+    <td class="wrapper">
+      <table>
+        <tr>
+          <td>
+            <a href="https://choiceform.com" target="_blank"><div class="brand-small grey"></div></a>
+            {{> divider }}
+            <h2 class="align-left">%collect% 结算清单</h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table class="form">
+              <thead>
+              <tr>
+                <th class="align-left" colspan="2">
+                  <div class="cover"><img src="%survey-cove%" alt=""></div>
+                  <strong>%survey-name%</strong>
+                </th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td colspan="2"><span>收集器</span></td>
+                <td><strong>%collect%</strong></td>
+              </tr>
+              <tr>
+                <td colspan="2"><span>回复数量</span></td>
+                <td><strong>1000</strong></td>
+              </tr>
+              <tr>
+                <td rowspan="2"><span>奖励</span></td>
+                <td><strong>%reward-name%</strong></td>
+                <td><strong>1000 / ￥10</strong></td>
+              </tr>
+              <tr>
+                <td><strong>%reward-name%</strong></td>
+                <td><strong>1000 / ￥5</strong></td>
+              </tr>
+              <tr>
+                <td colspan="2"><span>合计</span></td>
+                <td><strong>￥10000</strong></td>
+              </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span>* 价格已包含6%增值税</span>
+            {{> divider }}
+            <span>如果您有问题，请联系 <a href="" class="link">support@cform.io</a>。</span>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr class="footer">
+    <td class="wrapper">
+      <a href="https://choiceform.com" target="_blank"><div class="cf-logo"></div></a>
+    </td>
+  </tr>
+</table>
+
+{{> copyright }}
