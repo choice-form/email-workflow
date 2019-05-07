@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>{{ subject }}</title>
+  <title>%subject%</title>
   <link href="../src/css/main.css" media="all" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -12,12 +12,20 @@
       <tr>
         <td class="wrapper">
           <table>
+            <tr>
+              <td>
+                <a href="https://www.choiceform.com" target="_blank"><div class="brand-small grey"></div></a>
+                {{> divider }}
+                <h2 class="align-left">%subject%</h2>
+              </td>
+            </tr>
+
             {{ body }}
 
             <tr>
               <td>
                 {{> divider }}
-                <span>Questions? Please contact <a href="">support@choiceform.com</a>.</span>
+                <span>Have any questions? Please contact <a href="">support@choiceform.com</a>.</span>
               </td>
             </tr>
           </table>
@@ -26,7 +34,7 @@
 
       <tr class="footer">
         <td class="wrapper">
-          <a href="https://choiceform.com" target="_blank"><div class="cf-logo"></div></a>
+          <a href="https://www.choiceform.com" target="_blank"><div class="cf-logo"></div></a>
         </td>
       </tr>
     </table>

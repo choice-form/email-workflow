@@ -1,71 +1,94 @@
 ---
-layout: default.hbs
-subject: Components Guide
+layout: default_en-us.hbs
+subject: Your newest survey responses
 ---
 
-<span class="preheader">Your newest survey responses</span>
-<table class="main" border="0">
-  <tr>
-    <td class="wrapper">
-      <table>
-        <tr>
-          <td>
-            <a href="https://choiceform.com" target="_blank"><div class="brand-small grey"></div></a>
-            {{> divider }}
-            <h2 class="align-left">Here's today's recap of all your newest survey responses:</h2>
-          </td>
-        </tr>
-        <tr>
-          <td class="table">
-            <table>
-              <thead>
-              <tr>
-                <th class="align-left" colspan="4">
-                  <div class="cover"><img src="%survey-cove%" alt=""></div>
-                  <strong>%survey-name%</strong>
-                </th>
-              </tr>
-              <tr class="thead">
-                <th class="align-left" colspan="4">Collect Details</th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr>
-                <th class="align-left table-divider">%collect-name%</th>
-                <td class="align-left table-divider">%status%</td>
-                <td class="align-right table-divider">
-                  <strong>1000</strong>
-                  <span> / </span>
-                  <strong>500</strong>
-                </td>
-                <td class="align-right table-divider">50%</td>
-              </tr>
-              <tr>
-                <th class="align-left radius-bottom-left">%collect-name%</th>
-                <td class="align-left">%status%</td>
-                <td class="align-right">-</td>
-                <td class="align-right radius-bottom-right">-</td>
-              </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            {{> button type='primary' align='center' url='%reset_password_url%' title='See Responses'}}
-            {{> divider }}
-            <span>Questions? Please contact <a href="">support@cform.io</a>.</span>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
+<tr>
+  <td class="table">
+    <table>
+      <thead>
+      <tr>
+        <th class="align-left" colspan="4">
+          <div class="cover"><img src=<%= diagram.bg_image_url %>></div>
+          <strong><%= survey.name %></strong>
+        </th>
+      </tr>
+      <tr class="thead">
+        <th class="align-left" colspan="4">Collect Details</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th class="align-left table-divider"><%= collector.name %></th>
+        <td class="align-left table-divider"><%= collector.status %></td>
+        <td class="align-right table-divider">
+          <strong><%= collector.curr_amount %></strong>
+          <span> / </span>
+          <strong><%= collector.amount %></strong>
+        </td>
+        <td class="align-right table-divider"><%= collector.progress %></td>
+      </tr>
+      <tr>
+        <th class="align-left table-divider"><%= collector.name %></th>
+        <td class="align-left table-divider"><%= collector.status %></td>
+        <td class="align-right table-divider">
+          <strong><%= collector.curr_amount %></strong>
+          <span> / </span>
+          <strong><%= collector.amount %></strong>
+        </td>
+        <td class="align-right table-divider"><%= collector.progress %></td>
+      </tr>
+      </tbody>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td>
+    {{> button type='primary' align='center' url='%surveys.data.grid%' title='See Responses'}}
+  </td>
+</tr>
 
-  <tr class="footer">
-    <td class="wrapper">
-      <a href="https://choiceform.com" target="_blank"><div class="cf-logo"></div></a>
-    </td>
-  </tr>
-</table>
-
-{{> copyright }}
+<tr>
+  <td class="table">
+    <table>
+      <thead>
+      <tr>
+        <th class="align-left" colspan="4">
+          <div class="cover"><img src=<%= diagram.bg_image_url %>></div>
+          <strong><%= survey.name %></strong>
+        </th>
+      </tr>
+      <tr class="thead">
+        <th class="align-left" colspan="4">Collect Details</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th class="align-left table-divider"><%= collector.name %></th>
+        <td class="align-left table-divider"><%= collector.status %></td>
+        <td class="align-right table-divider">
+          <strong><%= collector.curr_amount %></strong>
+          <span> / </span>
+          <strong><%= collector.amount %></strong>
+        </td>
+        <td class="align-right table-divider"><%= collector.progress %></td>
+      </tr>
+      <tr>
+        <th class="align-left table-divider"><%= collector.name %></th>
+        <td class="align-left table-divider"><%= collector.status %></td>
+        <td class="align-right table-divider">
+          <strong><%= collector.curr_amount %></strong>
+          <span> / </span>
+          <strong><%= collector.amount %></strong>
+        </td>
+        <td class="align-right table-divider"><%= collector.progress %></td>
+      </tr>
+      </tbody>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td>
+    {{> button type='primary' align='center' url='%page.surveys.data.grid%' title='See Responses'}}
+  </td>
+</tr>

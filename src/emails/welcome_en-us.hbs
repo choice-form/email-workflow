@@ -1,43 +1,32 @@
 ---
-layout: default.hbs
-subject: Components Guide
+layout: blank_en-us.hbs
+subject: Welcome (name)
 ---
 
-<span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
-<table class="main" border="0">
-  <tr>
-    <div class="cover-header primary logo white"></div>
-  </tr>
-  <tr>
-    <td class="wrapper">
-      <table>
-        <tr>
-          <td>
-            <h1 class="align-center">Hi %name%</h1>
+<tr><div class="cover-header primary logo white"></div></tr>
+<tr>
+  <td class="wrapper">
+    <table>
+      <tr>
+        <td>
+          <h1 class="align-center">Hi %name%</h1>
 
-            {{> divider }}
-            <h2 class="align-left">Welcome to choiceform</h2>
-            <p>I'm excited to have you on board! With your valuable contribution, we can reach the next level!</p>
-            <p>choiceform this is a beta, not everything will be perfect yet. A lot of awesome features will be added during or after the beta period.</p>
-            {{> divider }}
-            <p>We need to make sure this is your email address. Please, click the button below to verify it so that we can activate your full access free account.</p>
-            {{> button type='secondary' align='center' url='%verify_url%' title='Verify my email'}}
-            {{> divider }}
-            <p>Button not working? Paste the following link into your browser:</p>
-            <a class="link small">%verify_url%</a>
-            <!--<h2 class="align-left">How to get started</h2>-->
-            <span>If you have any questions, comments or feedback, we’d love to hear them. So please, contact us at <a href="">support@cform.io</a>.</span>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
+          {{> divider }}
 
-  {{> follow_lee }}
+          <h2 class="align-left">Welcome to choiceform</h2>
 
-  <tr class="footer">
-    <td class="wrapper">
-      <a href="https://choiceform.com" target="_blank"><div class="cf-logo"></div></a>
-    </td>
-  </tr>
-</table>
+          <p>I'm excited to have you on board! With your valuable contribution, we can reach the next level!</p>
+          <p>choiceform this is a beta, not everything will be perfect yet. A lot of awesome features will be added during or after the beta period.</p>
+
+          {{> divider }}
+
+          <p>We need to make sure this is your email address. Please, click the button below to verify it so that we can activate your full access free account.</p>
+
+          {{> button type='secondary' align='center' url='%verify_url%' title='Verify my email'}}
+
+          <p>Button not working? Paste the following link into your browser: <a class="link small">%verify_url%</a></p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

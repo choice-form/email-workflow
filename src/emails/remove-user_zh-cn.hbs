@@ -1,31 +1,11 @@
 ---
-layout: default.hbs
-subject: Components Guide
+layout: default_zh-cn.hbs
+subject: 您已经被(team_name)团队移除
 ---
 
-<span class="preheader">您已经从 %team_name% 团队中离开。</span>
-<table class="main" border="0">
-  <tr>
-    <td class="wrapper">
-      <table>
-        <tr>
-          <td>
-            <a href="https://choiceform.com" target="_blank"><div class="brand-small grey"></div></a>
-            {{> divider }}
-            <h2 class="align-left">您已经从 <strong>%team_name%</strong> 团队中离开</h2>
-            <p>%name%，您好：</p>
-            <p>您已经被从 %team_name% 团队中移除。</p>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-
-  <tr class="footer">
-    <td class="wrapper">
-      <a href="https://choiceform.com" target="_blank"><div class="cf-logo"></div></a>
-    </td>
-  </tr>
-</table>
-
-{{> copyright }}
+<tr>
+  <td>
+    <p>%user_name%，您好：</p>
+    <p>您已经被%team_name%团队移除。</p>
+  </td>
+</tr>

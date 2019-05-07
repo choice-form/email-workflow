@@ -1,42 +1,23 @@
 ---
-layout: default.hbs
-subject: Components Guide
+layout: default_en-us.hbs
+subject: (inviter_name) has invited you to join the (team_name) team
 ---
 
-<span class="preheader">%inviter_name% has invited you to join the %team_name% team.</span>
-<table class="main" border="0">
-  <tr>
-    <td class="wrapper">
-      <table>
-        <tr>
-          <td>
-            <a href="https://choiceform.com" target="_blank"><div class="brand-small grey"></div></a>
-            {{> divider }}
-            <h2 class="align-left">%inviter_name% has invited you to join the <strong>%team_name%</strong> team</h2>
-            <div class="invited-profile">
-              <div class="profile"><img src="%team_avatar%" alt=""></div>
-              <div class="octicon-plus"></div>
-              <div class="profile"><img src="%invitee_avatar%" alt=""></div>
-            </div>
-            {{> divider }}
-            <p>Hi %invitee_name%,</p>
-            <p>%inviter_name% has invited you to join the test team on choiceform.</p>
-            {{> button type='primary' align='center' url='%accept_invitation_url%' title='Join %team_name%'}}
-            <span>Button not working? Paste the following link into your browser:</span>
-            <a class="link small">%accept_invitation_url%</a>
-            {{> divider }}
-            <span>You’re receiving this email because %inviter_name% invited you to a team on choiceform.</span>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
+<tr>
+  <td>
+    <div class="invited-profile">
+      <div class="profile"><img src="%team_avatar%" alt=""></div>
+      <div class="octicon-plus"></div>
+      <div class="profile"><img src="%invitee_avatar%" alt=""></div>
+    </div>
+    {{> divider }}
 
-  <tr class="footer">
-    <td class="wrapper">
-      <a href="https://choiceform.com" target="_blank"><div class="cf-logo"></div></a>
-    </td>
-  </tr>
-</table>
+    <p>Hi %invitee_name%,</p>
+    <p>%inviter_name% has invited you to join the test team on choiceform.</p>
 
-{{> copyright }}
+    {{> button type='primary' align='center' url='%accept_invitation_url%' title='Join %team_name%'}}
+
+    <span>Button not working? Paste the following link into your browser: <a class="link small">%accept_invitation_url%</a></span>
+    <span>You’re receiving this email because %inviter_name% invited you to a team on choiceform.</span>
+  </td>
+</tr>

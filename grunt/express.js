@@ -2,7 +2,7 @@
 module.exports = {
   server: {
     options: {
-      port: 4000,
+      port: 5000,
       hostname: '127.0.0.1',
       bases: ['<%= paths.dist %>', '<%= paths.preview %>', '<%= paths.src %>'],
       server: './server.js',

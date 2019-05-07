@@ -1,64 +1,38 @@
 ---
-layout: default.hbs
-subject: Components Guide
+layout: default_en-us.hbs
+subject: (collector) first survey response
 ---
 
-<span class="preheader">%collect% first survey response</span>
-<table class="main" border="0">
-  <tr>
-    <td class="wrapper">
-      <table>
-        <tr>
-          <td>
-            <a href="https://choiceform.com" target="_blank"><div class="brand-small grey"></div></a>
-            {{> divider }}
-            <h2 class="align-left">You've received %collect% first survey response.</h2>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <table class="form">
-              <thead>
-              <tr>
-                <th class="align-left" colspan="2">
-                  <div class="cover"><img src="%survey-cove%" alt=""></div>
-                  <strong>%survey-name%</strong>
-                </th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr>
-                <td><span>Collect</span></td>
-                <td><strong>%collect%</strong></td>
-              </tr>
-              <tr>
-                <td><span>Status</span></td>
-                <td><strong>%status%</strong></td>
-              </tr>
-              <tr>
-                <td><span>New response</span></td>
-                <td><strong>1</strong></td>
-              </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            {{> button type='primary' align='center' url='%reset_password_url%' title='See Responses'}}
-            {{> divider }}
-            <span>Questions? Please contact <a href="">support@cform.io</a>.</span>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-
-  <tr class="footer">
-    <td class="wrapper">
-      <a href="https://choiceform.com" target="_blank"><div class="cf-logo"></div></a>
-    </td>
-  </tr>
-</table>
-
-{{> copyright }}
+<tr>
+  <td>
+    <table class="form">
+      <thead>
+      <tr>
+        <th class="align-left" colspan="2">
+          <div class="cover"><img src=%bg_image_url%></div>
+          <strong>%survey_name%</strong>
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span>Collect</span></td>
+        <td><strong>%collector_name%</strong></td>
+      </tr>
+      <tr>
+        <td><span>Status</span></td>
+        <td><strong>%status%</strong></td>
+      </tr>
+      <tr>
+        <td><span>New response</span></td>
+        <td><strong>1</strong></td>
+      </tr>
+      </tbody>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td>
+    {{> button type='primary' align='center' url='%grid_url%' title='See Responses'}}
+  </td>
+</tr>

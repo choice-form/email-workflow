@@ -1,6 +1,6 @@
 // Browser-based preview task
 module.exports = {
   preview: {
-    path: 'http://localhost:4000'
+    path: 'http://localhost:5000'
   }
 }

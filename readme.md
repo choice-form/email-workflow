@@ -1,6 +1,6 @@
 # Grunt Email Design Workflow
 
-[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) 
+[![Built with Grunt](https://gruntjs.com/cdn/builtwith.png)](http://gruntjs.com/)
 
 Designing and testing emails is a pain. HTML tables, inline CSS, various devices and clients to test, and varying support for the latest web standards.
 
@@ -52,7 +52,7 @@ Run `grunt` in command line and check out your `/dist` folder to see your compil
 We encourage you __not__ to store sensitive data in your git repository. If you must, please look into [git-encrypt](https://github.com/shadowhand/git-encrypt) or some other method of encrypting your configuration secrets.
 
 1. Create a file `secrets.json` in your project root.
-2. Paste the following sample code in `secrets.json` and enter the appropriate credentials for the services you want to connect with. 
+2. Paste the following sample code in `secrets.json` and enter the appropriate credentials for the services you want to connect with.
 
 If you don't use or need these services **it's ok to leave these defaults**, but they should exist for this to work.
 
@@ -136,14 +136,14 @@ See the output HTML in the `dist` folder. Open them and preview it the browser.
 
 <img src="http://i.imgur.com/EnTCqUE.gif" width="500">
 
-Alternatively run `grunt serve`. This will check for any changes you make to your .scss and .hbs templates, automatically run the tasks, and serve you a preview in the browser on http://localhost:4000. Saves you having to run grunt every time you make a change.
+Alternatively run `grunt serve`. This will check for any changes you make to your .scss and .hbs templates, automatically run the tasks, and serve you a preview in the browser on http://localhost:5000. Saves you having to run grunt every time you make a change.
 
 ### Browser-based previews
 
-In terminal, run `grunt serve`. 
+In terminal, run `grunt serve`.
 
 * This will run the default tasks `grunt` + the `watch` task will be initiated
-* A preview UI will automagically open on [http://localhost:4000](http://localhost:4000) and you can review your templates
+* A preview UI will automagically open on [http://localhost:5000](http://localhost:5000) and you can review your templates
 * Go about your business editing templates and see your template changes live-reload
 * __NOTE:__ The express server stops working when the `watch` task is not running
 
