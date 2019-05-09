@@ -16,12 +16,12 @@ subject: (collector) Statement
       </thead>
       <tbody>
       <tr>
-        <td colspan="2"><span>Collect</span></td>
-        <td><strong><%= collect_name %></strong></td>
+        <td colspan="2"><span>Collector</span></td>
+        <td><strong><%= collector.name %></strong></td>
       </tr>
       <tr>
         <td colspan="2"><span>Responses</span></td>
-        <td><strong><%= response_count %></strong></td>
+        <td><strong><%= collector.curr_amount %></strong></td>
       </tr>
       <tr>
         <td rowspan="2"><span>Reward</span></td>
@@ -33,7 +33,7 @@ subject: (collector) Statement
         <td><strong><%= reward_count %> / <%= reward_amount %></strong></td>
       </tr>
       <tr>
-        <td colspan="2"><span>Total</span></td>
+        <td colspan="2"><span>Total (includes 15% service and 6% VAT)</span></td>
         <td><strong><%= reward_amount %></strong></td>
       </tr>
       </tbody>
@@ -42,6 +42,6 @@ subject: (collector) Statement
 </tr>
 <tr>
   <td>
-    {{> button type='primary' align='center' url='%reset_password_url%' title='Download as PDF'}}
+    {{> button type='primary' align='center' url='%surveys.data.grid%' title='See Responses'}}
   </td>
 </tr>

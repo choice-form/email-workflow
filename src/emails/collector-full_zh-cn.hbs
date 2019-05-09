@@ -1,6 +1,6 @@
 ---
 layout: default_zh-cn.hbs
-subject: (collector) 下线结算清单
+subject: (collector)下线结算清单
 ---
 
 <tr>
@@ -17,11 +17,11 @@ subject: (collector) 下线结算清单
       <tbody>
         <tr>
           <td colspan="2"><span>收集器</span></td>
-          <td><strong><%= collect_name %></strong></td>
+          <td><strong><%= collector.name %></strong></td>
         </tr>
         <tr>
           <td colspan="2"><span>回复数量</span></td>
-          <td><strong><%= response_count %></strong></td>
+          <td><strong><%= collector.curr_amount %></strong></td>
         </tr>
         <tr>
           <td rowspan="2"><span>奖励</span></td>
@@ -33,7 +33,7 @@ subject: (collector) 下线结算清单
           <td><strong><%= reward_count %> / <%= reward_amount %></strong></td>
         </tr>
         <tr>
-          <td colspan="2"><span>合计</span></td>
+          <td colspan="2"><span>合计（包含15%服务费和6%增值税）</span></td>
           <td><strong><%= reward_amount %></strong></td>
         </tr>
       </tbody>
@@ -42,6 +42,6 @@ subject: (collector) 下线结算清单
 </tr>
 <tr>
   <td>
-    {{> button type='primary' align='center' url='%reset_password_url%' title='下载 PDF'}}
+    {{> button type='primary' align='center' url='%surveys.data.grid%' title='查看回复'}}
   </td>
 </tr>
